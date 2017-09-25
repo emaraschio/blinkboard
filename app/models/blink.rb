@@ -1,0 +1,2 @@
+class Blink < ApplicationRecord
+end
