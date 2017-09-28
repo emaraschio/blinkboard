@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Idea from './Idea'
 import axios from 'axios'
 
 class BlinksContainer extends Component {
@@ -22,12 +23,7 @@ class BlinksContainer extends Component {
     return (
       <div>
         {this.state.blinks.map((blink) => {
-          return(
-            <div className="tile" key={blink.id} >
-              <h4>{blink.title}</h4>
-              <p>{blink.description}</p>
-            </div>
-          )
+          return (<Blink blink={blink} key={blink.id} />)
         })}
       </div>
     );
